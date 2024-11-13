@@ -1,6 +1,7 @@
 ﻿#include <string>
 #include <iostream>
 #include <cassert>
+#include <vector>
 
 using namespace std;
 
@@ -119,8 +120,34 @@ int main()
 
 	//задание 4
 
-	int numbers[15] = { 114, 111, 106, 107, 108, 105, 115, 108, 110, 109, 112, 113, 116, 117, 118 };
+	/*int numbers[15] = {114, 111, 106, 107, 108, 105, 115, 108, 110, 109, 112, 113, 116, 117, 118};
 	int trueSum = (minNumber(numbers) + minNumber(numbers) + 13) * 14 / 2;
-	cout << "Recurring number is " << arrSum(numbers) - trueSum;
+	cout << "Recurring number is " << arrSum(numbers) - trueSum;*/
+
+	vector<int> vec;
+
+	int realSize = 0;
+	int val;
+	cin >> val;
+	while (val != -2) {
+		if (val == -1) {
+			float sum = 0;
+			for (int i = 0; i < realSize; i++) {
+				sum += vec[i];
+			}
+			float avg = sum / realSize;
+
+			cout << endl << "avg = " << avg << endl;
+
+			for (int i = realSize - 1; i >= 0; --i) {
+				cout << vec[i] << " ";
+			}
+		}
+		else {
+			vec.resize(vec.size() + 1);
+			vec[vec.size() - 1] = val;
+		}
+		cin >> val;
+	}
 
 }
