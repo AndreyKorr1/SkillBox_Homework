@@ -1,15 +1,14 @@
-п»ї#include <vector>
+#include <vector>
 #include <iostream>
 
 using namespace std;
 
 int main()
 {
-	//Р·Р°РґР°РЅРёРµ 1
-	
+	//задание 1
+
 	/*int del;
 	int n;
-	vector<int> vecResult;
 	cout << "Input vector size: ";
 	cin >> n;
 	vector<int> vec(n);
@@ -21,20 +20,22 @@ int main()
 	}
 	cout << "Input number to delete: ";
 	cin >> del;
-	for (int i = 0; i < vec.size(); i++) {
-		if (vec[i] != del) {
-			vecResult.push_back(vec[i]);
+	int i = 0;
+	while(i < vec.size()) {
+		if (vec[i] == del) {
+			for (int j = i; j < vec.size() - 1; ++j) {
+				vec[j] = vec[j + 1];
+			}
+			vec.pop_back();
 		}
 		else {
-			continue;
+			i++;
 		}
 	}
-	cout << "Result: ";
-	for (int i = vecResult.size() - 1; i >= 0; --i) {
-		cout << vecResult[i] << " ";
+	for (int i = 0; i < vec.size(); i++) {
+		cout << vec[i] << " ";
 	}*/
-
-	//Р—Р°РґР°РЅРёРµ 2
+	//Задание 2
 
 	/*vector<float> price{5.4, 234.5, 55.9, 7.6, 67.4};
 	vector<float> item{ 1, 1, 1, 1, 0, 0, 4 };
@@ -44,8 +45,8 @@ int main()
 	}
 	cout << result;*/
 
-	//Р—Р°РґР°РЅРёРµ 3
-	vector<int> a(20);
+	//Задание 3
+	/*vector<int> a(20);
 	int input;
 	int count = 0;
 	while (true) {
@@ -69,5 +70,5 @@ int main()
 				}
 			}
 		}
-	}
+	}*/
 }
