@@ -20,16 +20,16 @@ enum switches {
     CONDITIONER = 16
 };
 
-// Функция для форматирования цветовой температуры (без iomanip)
+// ??????? ??? ?????????????? ???????? ??????????? (??? iomanip)
 std::string formatColorTemperature(double temperature) {
-    int roundedTemperature = static_cast<int>(temperature); // Округляем до целого
+    int roundedTemperature = static_cast<int>(temperature); // ????????? ?? ??????
     return std::to_string(roundedTemperature) + "K";
 }
 
 int main()
 {
 
-    //Задание 1
+    //??????? 1
 
     /*float speedDel;
     float speed = 0.f;
@@ -50,7 +50,7 @@ int main()
 
     } while (speed > 0.01);*/
 
-    //Задание 2
+    //??????? 2
     /*std::string firstPart;
     std::string secondPart;
     double result;
@@ -63,7 +63,7 @@ int main()
     result = std::stod(firstPart + "." + secondPart);
     std::cout << result;*/
 
-    //Задание 3
+    //??????? 3
 
     /*double firstNumber;
     double secondNumber;
@@ -95,7 +95,7 @@ int main()
     }*/
 
 
-    // Задание 4
+    // ??????? 4
 
     /*std::string chord;
     std::cout << "Enter chord (digits 1-7): ";
@@ -140,7 +140,7 @@ int main()
     std::cout << std::endl;*/
 
 
-    //Задание 5
+    //??????? 5
     int temperature_outside = 10;
     int temperature_inside = 20;
     std::string movement = "no";
